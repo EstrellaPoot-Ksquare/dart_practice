@@ -1,14 +1,11 @@
-void main() {
-  print(findALongWord(['hi', 'hello', 'are', 'cool'])); //hello
-  print(findALongWord(['mexico', 'hello', 'are', 'cool'])); //mexico
-}
-
-String findALongWord(List<String> words) {
-  String lengthiestWord = '';
-  for (int i = 0; i < words.length; i++) {
-    if (words[i].length > lengthiestWord.length) {
-      lengthiestWord = words[i];
+class Practice12 {
+  String findALongWord(List<String> inputList) {
+    String lengthiestWord = '';
+    for (int i = 0; i < inputList.length; i++) {
+      if (inputList[i].length > lengthiestWord.length) {
+        lengthiestWord = inputList[i];
+      }
     }
+    return lengthiestWord;
   }
-  return lengthiestWord;
 }
